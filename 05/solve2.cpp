@@ -4,7 +4,6 @@
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
-#include <cmath>
 
 using namespace std;
 
@@ -67,7 +66,7 @@ int main() {
                 newNumbers.push_back(current);
             }
         }
-        sum += newNumbers[ceil(newNumbers.size() / 2)];
+        sum += newNumbers[newNumbers.size() / 2];
     }
 
     cout << sum << endl;
